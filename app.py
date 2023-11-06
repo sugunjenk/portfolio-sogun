@@ -37,7 +37,7 @@ def send_message():
     messages.insert_one(new_message)
 
     # Anda dapat memberikan respons ke klien jika diperlukan
-    response = {'message': 'Pesan telah berhasil disimpan ke database.'}
+    response = {'message': 'Pesan anda telah terkirim.'}
     return jsonify(response)
 
 if __name__ == '__main__':
